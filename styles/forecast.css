@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+
+.main-container>h2 {
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    margin-top: -20px;
+    margin-bottom: 1rem;
+
+}
+
+/* container1 starts here  */
+
+.container1 {
+    max-width: 700px;
+    box-shadow: 0px 0px 3px rgb(117, 115, 115);
+    border-radius: 4px;
+    padding: 20px;
+    margin-inline: auto;
+}
+
+.search-input-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    background-color: transparent;
+    color: white;
+    padding: 4px 12px;
+    border: none;
+    outline: 2px solid rgb(76, 75, 75);
+    border-radius: 7px;
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+}
+
+.search-input:focus {
+    box-shadow: 0px 0px 6px rgb(212, 210, 210);
+    transition: .3s all;
+}
+
+.search-input:focus::placeholder {
+    color: rgb(149, 8, 8);
+    transition: .3s;
+}
+
+.search-btn {
+    border: none;
+    outline: none;
+    padding: 4px;
+    cursor: pointer;
+    background-color: rgba(12, 96, 135, 0.879);
+    margin-left: -68px;
+    font-size: 1.1rem;
+    border-radius: 0px 7px 7px 0px;
+}
+
+.search-btn:hover {
+    background-color: rgba(22, 113, 156, 0.879);
+
+}
+
+.search-btn:active {
+    background-color: rgba(13, 93, 130, 0.879);
+
+}
+
+.current-temp-card {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.current-time {
+    margin-bottom: 1rem;
+    font-size: .9rem;
+}
+
+.current-temp-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.celsius-btn,
+.fahrenheit-btn {
+    padding: 2px;
+    width: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.celsius-btn:hover,
+.fahrenheit-btn:hover {
+    background-color: rgb(146, 145, 145);
+}
+
+.celsius-btn:active,
+.fahrenheit-btn:active {
+    background-color: gray;
+}
+
+.weather-condition-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+
+}
+
+.img-wrapper {
+    width: 100px;
+    height: 100px;
+}
+
+.weather-condition {
+    color: rgb(212, 208, 208);
+}
+
+.img-wrapper>img {
+    width: 100%;
+    height: 100%;
+}
+
+/* container1 ends here  */
+
+
+/* today-forecast-container starts here  */
+
+.today-forecast-container {
+    box-shadow: 0px 0px 3px rgb(117, 115, 115);
+    max-width: 800px;
+    margin: 1rem auto;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.today-forecast-container>h4 {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: gray;
+}
+
+.today-forecast-cards-box {
+    padding-inline: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    overflow-x: scroll;
+
+}
+
+.today-forecast-card {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 20px;
+    margin-bottom: 1rem;
+}
+
+.today-forecast-card .today-forecast-time {
+    color: gray;
+
+}
+
+/* today-forecast-container ends here  */
+
+/* air-condition-container starts here  */
+
+.air-condition-container {
+    max-width: 800px;
+    margin: 1rem auto;
+    box-shadow: 0px 0px 3px rgb(117, 115, 115);
+    padding: 1rem;
+}
+
+.air-condition-container>h4 {
+    color: gray;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.air-condition-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.feels-like-card,
+.wind-card,
+.humidity-card,
+.uvindex-card {
+    width: 50%;
+    padding: 1rem;
+    font-size: 1.3rem;
+
+}
+
+.fa-temperature-three-quarters,
+.fa-wind,
+.fa-droplet,
+.fa-sun {
+    font-size: 1.7rem;
+}
+
+
+/* air-condition-container ends here  */
+
+/* more-info-container starts here  */
+
+.more-info-container {
+    max-width: 800px;
+    margin: 4rem auto;
+    box-shadow: 0px 0px 3px rgb(117, 115, 115);
+    padding: 1rem;
+}
+
+.more-info-container h4 {
+    color: gray;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.air-quality {
+    display: flex;
+    align-items: flex-start;
+    row-gap: 1rem;
+    margin-block: 1rem;
+}
+
+.air-quality button {
+    width: 100px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background-color: gray;
+    font-weight: bold;
+    font-family: "poppins", 'sans-serif';
+}
+
+.air-quality {
+    display: flex;
+    gap: 1rem;
+}
+
+.air-qualities-box {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.air-quality .air-qualities-box span {
+    display: flex;
+}
+
+.air-quality .air-qualities-box span p {
+    font-weight: bold;
+}
+
+.pressure,
+.visibility,
+.sunrise,
+.sunset,
+.moonrise,
+.moonset,
+.moonphase {
+    margin-block: 1rem;
+}
+
+.pressure button,
+.humidity button,
+.visibility button,
+.sunrise button,
+.sunset button,
+.moonrise button,
+.moonset button,
+.moonphase button {
+    width: 100px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background-color: gray;
+    font-weight: bold;
+    font-family: "poppins", 'sans-serif';
+    margin-right: 1.3rem;
+}
+
+/* more-info-container ends here   */
+
+
+
+
+@media screen and (max-width:470px) {
+
+
+    .search-input {
+        font-size: .7rem;
+        padding: 4px 7px;
+    }
+
+    .search-btn {
+        font-size: .7em;
+        margin-left: -46px;
+    }
+
+    .current-temp-card {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .temp-card {
+        margin-top: 1rem;
+    }
+
+    .current-time {
+        text-align: center;
+    }
+
+
+    .weather-condition-box {
+        margin: 0;
+    }
+
+    .city-name {
+        text-align: center;
+    }
+
+    .img-wrapper {
+        margin-top: 1px;
+        margin-bottom: 1rem;
+    }
+
+    .today-forecast-card {
+        border: none;
+        width: 80px;
+        height: 80px;
+        padding-inline: 10px;
+    }
+
+    .today-forecast-card .today-forecast-time {
+        font-size: .7rem;
+    }
+
+    .today-forecast-card img {
+        width: 30px;
+    }
+
+    .today-forecast-card .today-forecast-temp {
+        font-size: .8rem;
+    }
+
+    .feels-like-card,
+    .wind-card,
+    .humidity-card,
+    .uvindex-card {
+        width: 50%;
+        padding: .5rem;
+        font-size: .6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .fa-temperature-three-quarters,
+    .fa-wind,
+    .fa-droplet,
+    .fa-sun {
+        font-size: .9rem;
+    }
+
+    .air-quality {
+        flex-direction: column;
+        align-items: center;
+        ;
+
+    }
+
+    .air-qualities-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .pressure,
+    .visibility,
+    .sunrise,
+    .sunset,
+    .moonrise,
+    .moonset,
+    .moonphase {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+
+    }
+
+    .pressure button,
+    .visibility button,
+    .sunrise button,
+    .sunset button,
+    .moonrise button,
+    .moonset button,
+    .moonphase button {
+        margin: 0;
+    }
+
+}

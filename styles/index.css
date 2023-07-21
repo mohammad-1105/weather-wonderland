@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* box1 starts here  */
+
+.box1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #f9c22e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.box1>div {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin: 2rem;
+}
+
+
+.box1>div>i {
+    font-size: 2.3rem;
+}
+
+.box1 .title {
+    font-size: 80px;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.box1 .diveIn-btn {
+    background-color: black;
+    color: #f9c22e;
+    font-family: 'Old Standard TT', serif;
+    outline: none;
+    border: none;
+    border-radius: 9999px;
+    padding: 10px 30px;
+    text-align: center;
+    box-shadow: 2px 2px 2px rgb(19, 18, 18);
+}
+
+.box1 .diveIn-btn:hover {
+    background-color: rgb(45, 44, 44);
+    transition: .3s;
+}
+
+.box1 .diveIn-btn:active {
+    background-color: black;
+    box-shadow: 0px 0px 0px;
+}
+
+/* box1 ends here  */
+
+/* box2 starts here  */
+
+.box2 {
+    padding: 100px 100px;
+    background-color: #e01a4f;
+    color: white;
+}
+
+.box2>h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: 'Abril Fatface', cursive;
+    margin-bottom: 2rem;
+}
+
+.box2 .meteorology-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.3rem;
+}
+
+/* box2 ends here  */
+
+/* box3 starts here  */
+
+.box3 {
+    padding: 50px 100px;
+    background-color: black;
+    color: white;
+}
+
+.box3>h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: 'Abril Fatface', cursive;
+    margin-bottom: 2rem;
+}
+
+.box3 .astonishing-weather-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.astonishing-weather-container img {
+    width: 30%;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+/* box3 ends here  */
+
+
+/* box4 starts here  */
+
+.box4 {
+    padding: 50px 100px;
+    background-color: black;
+}
+
+.box4>h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: 'Abril Fatface', cursive;
+    margin-bottom: 2rem;
+    color: #e01a4f;
+}
+
+.join-contact-btn-box{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.joinUs-btn {
+    color: #137bb0;
+    font-family: 'Old Standard TT', serif;
+    outline: none;
+    border: none;
+    border-radius: 9999px;
+    padding: 8px 30px;
+    text-align: center;
+    outline: 2px solid;
+}
+.joinUs-btn:hover , .contactUs-btn:hover {
+    background-color: rgb(27, 27, 26);
+    transition: .3s;
+}
+.joinUs-btn:active , .contactUs-btn:active {
+    background-color: rgb(46, 46, 46);
+}
+
+.contactUs-btn {
+    color:#f9c22e;
+    font-family: 'Old Standard TT', serif;
+    outline: none;
+    border: none;
+    border-radius: 9999px;
+    padding: 8px 30px;
+    text-align: center;
+    outline: 2px solid;
+}
+
+/* box4 ends here  */
+
+/* footer starts here  */
+
+footer {
+    padding: 60px 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Old Standard TT', serif;
+    text-align: center;
+}
+footer .follow-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    
+}
+
+footer .follow-links a {
+    color: white;
+}
+
+/* footer ends here  */
+
+@media screen and (max-width: 530px) {
+    .box1 {
+        height: 60vh;
+    }
+
+    .box1>div {
+        align-items: start;
+        gap: 2rem;
+    }
+
+    .box1 .title {
+        font-size: 40px;
+        text-align: start;
+        line-height: 1em;
+    }
+
+    .box1 .diveIn-btn {
+        width: 100%;
+    }
+
+    .box2 {
+        padding: 50px 30px;
+    }
+
+    .box2>h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .box2 .meteorology-box {
+        flex-direction: column;
+        width: 100%;
+        gap: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .box3 {
+        padding: 50px 30px;
+    }
+
+    .box3>h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+
+    }
+    .box4 {
+        padding: 50px 30px;
+    }
+
+    .box4>h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .join-contact-btn-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .joinUs-btn , .contactUs-btn {
+        width: 100%;
+    }
+
+}
