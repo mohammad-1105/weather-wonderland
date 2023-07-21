@@ -39,7 +39,6 @@ async function fetchWeather(query) {
     `${url}${query}&days=1&alerts=yes&aqi=yes&key=${api_key}`
   );
   const data = await res.json();
-  console.log(data);
   weatherData(data);
 }
 
